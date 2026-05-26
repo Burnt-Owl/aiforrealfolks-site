@@ -1,3 +1,4 @@
+# OS / editor cruft
 .DS_Store
 Thumbs.db
 *.swp
@@ -5,3 +6,35 @@ Thumbs.db
 .vscode/
 .idea/
 node_modules/
+
+# === Secrets — never commit anything in these patterns ===
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+
+# Tokens / credentials
+*tokens*.json
+*credentials*.json
+*secrets*.json
+client_secret*.json
+service-account*.json
+*.kdbx
+
+# Common cloud / API key files
+.aws/
+.config/gcloud/
+firebase-debug.log
+.firebaserc
+
+# Backup / temp files that often contain pasted secrets
+*.log
+*.dump
+*.sql.gz
+notes.md
+TODO-private.md
+scratch.*
